@@ -57,5 +57,11 @@ Options:
   `npm test`
 
 #### Note
-* Execute specific test
-`npm test -- --spec=tests/TEST FILE NAME`
+
+- Execute specific test
+
+  `npm test -- --spec=tests/TEST FILE NAME`
+
+- Install Ranorex selocity to get css/xpath
+
+  https://chrome.google.com/webstore/detail/ranorex-selocity/ocgghcnnjekfpbmafindjmijdpopafoe?utm_source=chrome-ntp-icon
