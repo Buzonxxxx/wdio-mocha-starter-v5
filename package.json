@@ -1,0 +1,27 @@
+{
+  "name": "pure-wdio-mocha-starter",
+  "version": "1.0.0",
+  "description": "During late December 2018, WebdriverIO released WebdriverIO version 5.",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Buzonxxxx/pure-wdio-mocha-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Buzonxxxx/pure-wdio-mocha-starter/issues"
+  },
+  "homepage": "https://github.com/Buzonxxxx/pure-wdio-mocha-starter#readme",
+  "devDependencies": {
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.13.2"
+  },
+  "dependencies": {}
+}
