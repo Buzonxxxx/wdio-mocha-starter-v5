@@ -9,8 +9,8 @@ http://v4.webdriver.io/
 
 #### Dependency
 - webdriverio@4.13.2
-- mocha@latest
 - wdio-spec-reporter
+- chai
 
 #### package.json
 - "scripts": { "test": "wdio" },
@@ -36,6 +36,15 @@ Options:
 - services: ['selenium-standalone'],
 - reporters: ['dot', 'spec'],
 
+- ```js
+
+  before: function (capabilities, specs) {
+      assert = require('chai').assert
+      expect = require('chai').expect
+      should = require('chai').should()
+    },
+  ```
+
 #### Trigger Test
 
   1. Git clone the [repo]
@@ -46,3 +55,7 @@ Options:
 
   3. Execute test
   `npm test`
+
+#### Note
+* Execute specific test
+`npm test -- --spec=tests/TEST FILE NAME`

@@ -145,6 +145,11 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
+    before: function (capabilities, specs) {
+        assert = require('chai').assert
+        expect = require('chai').expect
+        should = require('chai').should()
+    },
     // onPrepare: function (config, capabilities) {
     // },
     /**
