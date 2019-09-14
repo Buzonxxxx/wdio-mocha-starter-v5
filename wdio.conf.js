@@ -1,3 +1,5 @@
+const timeout = process.env.DEBUG ? 9999999 : 10000
+
 exports.config = {
     
     //
@@ -130,7 +132,8 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout: timeout
     },
     //
     // =====

@@ -1,4 +1,4 @@
-class Main_Page {
+class OmletMainPage {
   get loginSignUpButton() {
     return $(".omlet-bar-login-button");
   } 
@@ -22,4 +22,4 @@ class Main_Page {
   }
 }
 
-module.exports = new Main_Page();
+module.exports = new OmletMainPage();

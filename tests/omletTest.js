@@ -1,5 +1,5 @@
 
-const MainPage = require("../pageObjects/omletMain_Page")
+const MainPage = require("../pageObjects/OmletMainPage")
 
 describe('Login function test', () => {
   it('should login successfully with correct id and password', function() {
