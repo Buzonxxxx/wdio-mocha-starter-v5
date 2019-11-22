@@ -1,6 +1,7 @@
 const MainPage = require('../pageObjects/GrindrMainPage');
 
 describe('Test Main PAge', () => {
+  
    it('Enter Sr. Backend Engineer recruit page', function () {
     this.timeout(20000);
     browser.url("https://www.grindr.com/");
