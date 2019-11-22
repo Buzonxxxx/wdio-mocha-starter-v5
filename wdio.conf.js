@@ -165,6 +165,9 @@ exports.config = {
      */
     before: function (capabilities, specs) {
         require('@babel/register')
+        assert = require('chai').assert
+        expect = require('chai').expect
+        should = require('chai').should()
     },
     /**
      * Runs before a WebdriverIO command gets executed.
