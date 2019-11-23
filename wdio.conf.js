@@ -168,6 +168,14 @@ exports.config = {
         assert = require('chai').assert
         expect = require('chai').expect
         should = require('chai').should()
+
+        browser.addCommand('getUrlAndTitle', function () {
+            // `this` refers to the `browser` scope
+            return {
+                url: this.getUrl(),
+                title: this.getTitle()
+            }
+        })
     },
     /**
      * Runs before a WebdriverIO command gets executed.

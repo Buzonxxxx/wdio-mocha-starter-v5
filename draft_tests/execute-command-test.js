@@ -5,7 +5,7 @@ describe('Inject javascript into the target website', () => {
   });
 
   it('Change webdriveruni background color', () => {
-    browser.execute(() => (document.body.style.backgroundColor));
+    browser.execute(() => (document.body.style.backgroundColor = 'red'));
     browser.pause(5000);
   });
 });
