@@ -177,9 +177,28 @@ exports.config = {
 
         browser.addCommand('getUrlAndTitle', function () {
             // `this` refers to the `browser` scope
-            return {
-                url: this.getUrl(),
-                title: this.getTitle()
+            try {
+                return { url: this.getUrl(), title: this.getTitle() }
+            } catch (Error) {
+                throw new Error('Could get URL or Title!');
+            }
+        })
+
+        browser.addCommand('waitAndClick', function (selector) {
+            try {
+                $(selector).waitForExist();
+                $(selector).click();
+            } catch (Error) {
+                throw new Error(`Could not click on selector: ${selector}`);
+            }
+        })
+
+        browser.addCommand('waitAndSendkeys', function (selector, keys) {
+            try {
+                $(selector).waitForExist();
+                $(selector).setValue(keys);
+            } catch (Error) {
+                throw new Error(`Could not send keys: ${keys} using selector: ${selector}`);
             }
         })
     },
