@@ -24,16 +24,16 @@ exports.config = {
     specs: [
         './test/**/*.js'
     ],
-    suites: {
-        contactus: [
-            "./test/contact-us-test.js"
-        ],
-        regression: [
-            "./test/checkbox-test.js",
-            "./test/homepage-test.js",
-            "./test/switch-window-test.js"
-        ]
-    },
+    // suites: {
+    //     contactus: [
+    //         "./test/contact-us-test.js"
+    //     ],
+    //     regression: [
+    //         "./test/checkbox-test.js",
+    //         "./test/homepage-test.js",
+    //         "./test/switch-window-test.js"
+    //     ]
+    // },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -134,7 +134,7 @@ exports.config = {
     framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole
-    specFileRetries: 1,
+    // specFileRetries: 1,
     //
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
