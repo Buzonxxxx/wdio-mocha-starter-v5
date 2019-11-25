@@ -24,7 +24,8 @@ Execute `./node_modules/.bin/wdio`
 #### Note
 
 - WDIO setup: `./node_modules/.bin/wdio`
-- Execute specific test: `npm test -- --spec=tests/TEST FILE NAME`
+- Execute specific test: `npm test -- --spec=tests/[TEST FILE NAME]`
+- Execute specific suite: `npm test -- --suite [SUITE NAME]`
 
 - Install [Ranorex](https://chrome.google.com/webstore/detail/ranorex-selocity/ocgghcnnjekfpbmafindjmijdpopafoe?utm_source=chrome-ntp-icon) selocity to get css/xpath
 

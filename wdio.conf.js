@@ -24,6 +24,16 @@ exports.config = {
     specs: [
         './test/**/*.js'
     ],
+    suites: {
+        contactus: [
+            "./test/contact-us-test.js"
+        ],
+        regression: [
+            "./test/checkbox-test.js",
+            "./test/homepage-test.js",
+            "./test/switch-window-test.js"
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -44,7 +54,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -124,7 +134,7 @@ exports.config = {
     framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole
-    // specFileRetries: 3,
+    specFileRetries: 1,
     //
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
