@@ -1,4 +1,10 @@
-class OmletMainPage {
+import Base_PO from './Base_PO';
+
+class OmletMain_PO extends Base_PO {
+  open() {
+    super.open('https://omlet.gg/');
+  }
+
   get loginSignUpButton() {
     return $('.omlet-bar-login-button');
   }
@@ -28,4 +34,4 @@ class OmletMainPage {
   }
 }
 
-module.exports = new OmletMainPage();
+module.exports = new OmletMain_PO();
